@@ -1,0 +1,98 @@
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzTitle="The first Modal"
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="handleOk()"
+>
+  <ng-container *nzModalContent>
+    <form
+      nz-form
+      [nzLayout]="'inline'"
+      [formGroup]="validateForm"
+      (ngSubmit)="submitForm()"
+    >
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Enter Employee Name!">
+          <nz-input-group nzPrefixIcon="user">
+            <input
+              class="item-width"
+              formControlName="name"
+              nz-input
+              placeholder="Employee Name"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Enter Employee Identification!">
+          <nz-input-group nzPrefixIcon="number">
+            <input
+              class="item-width"
+              formControlName="employeeIdentification"
+              nz-input
+              placeholder="Enter Employee Identification"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Enter Employee Mobile!">
+          <nz-input-group nzPrefixIcon="mobile">
+            <input
+              class="item-width"
+              formControlName="employeeMobile"
+              nz-input
+              placeholder="Enter Employee Mobile"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control>
+          <nz-input-group nzPrefixIcon="phone">
+            <input
+              class="item-width"
+              formControlName="employeePhone"
+              nz-input
+              placeholder="Enter Employee Phone"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Choose Hire Date!">
+          <nz-date-picker
+            class="item-width"
+            formControlName="hireDate"
+            placeholder="Choose Hire Date"
+          />
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-select
+          class="item-width"
+          formControlName="department"
+          nzPlaceHolder="Select Department"
+        >
+          <nz-option
+            *ngFor="let department of departments"
+            [nzLabel]="department.name"
+            [nzValue]="department.id"
+          />
+        </nz-select>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control nzErrorTip="Please Enter Employee Position!">
+          <nz-input-group nzPrefixIcon="team">
+            <input
+              formControlName="position"
+              class="item-width"
+              nz-input
+              placeholder="Position"
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
+  </ng-container>
+</nz-modal>
