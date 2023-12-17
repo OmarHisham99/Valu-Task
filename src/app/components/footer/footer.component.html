@@ -1,0 +1,47 @@
+<!-- footer.component.html -->
+<footer id="site-footer">
+  <div class="footer-container">
+    <div class="logo">
+      <!-- Add your site logo here -->
+      <img src="assets/images/valu_logo.png" alt="Site Logo" />
+    </div>
+    <div class="site-map">
+      <h3 i18n>{{ "Site Map" | translate }}</h3>
+      <!-- Add your site map links here -->
+      <ul>
+        <li>
+          <a routerLink="/" i18n>{{ "Home" | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/employees" i18n>{{ "Employees" | translate }}</a>
+        </li>
+        <li>
+          <a routerLink="/departments" i18n>{{ "Departments" | translate }}</a>
+        </li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+
+    <div class="contact-info">
+      <h3 i18n>{{ "Contact Us" | translate }}</h3>
+      <!-- Add your contact information here -->
+      <p>{{ "Email" | translate }}: infoexample.com</p>
+      <p>{{ "Phone" | translate }}: +1 (123) 456-7890</p>
+    </div>
+
+    <div class="social-links">
+      <h3 i18n>{{ "Connect With Us" | translate }}</h3>
+      <!-- Add your social media links here -->
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <!-- Add more social media icons as needed -->
+    </div>
+  </div>
+</footer>

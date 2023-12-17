@@ -1,0 +1,32 @@
+<section id="departments-section">
+  <swiper-container
+    navigation="true"
+    pagination="true"
+    pagination-clickable="true"
+    [slidesPerView]="slidesPerView"
+  >
+    <swiper-slide
+      (click)="flipCard(i)"
+      class="flip-card"
+      *ngFor="let department of departments; index as i"
+    >
+      <div class="flip-card-inner" [class.flip]="checkIfFliped(i)">
+        <div class="flip-card-front">
+          <h3 style="font-weight: bold">
+            {{ department.title }}
+          </h3>
+          <div>
+            <img
+              style="width: 25vh; height: 25vh"
+              [src]="department.image"
+              alt="department"
+            />
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <p>{{ department.details }}</p>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</section>

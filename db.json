@@ -1,0 +1,36 @@
+{
+  "Employees": [
+    {
+      "name": "Omar",
+      "employeeIdentification": "1",
+      "employeeMobile": "01154280802",
+      "employeePhone": "",
+      "active": true,
+      "hireDate": "1999-12-04T00:00:00.000Z",
+      "position": "Software",
+      "departmentId": 1,
+      "id": 1
+    },
+    {
+      "name": "Amr",
+      "employeeIdentification": "2",
+      "employeeMobile": "01154280802",
+      "employeePhone": "",
+      "active": true,
+      "hireDate": "2000-12-07T00:00:00.000Z",
+      "position": "Software",
+      "departmentId": 1,
+      "id": 2
+    }
+  ],
+  "Departments": [
+    {
+      "name": "HR",
+      "details": "Test",
+      "order": 1,
+      "active": true,
+      "employees": [],
+      "id": 1
+    }
+  ]
+}

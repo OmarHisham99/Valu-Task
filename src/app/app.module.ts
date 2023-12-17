@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -18,15 +18,31 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzSelectModule } from 'ng-zorro-antd/select';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RegisterEmployeeDialogComponent } from './components/register-employee-dialog/register-employee-dialog.component';
+import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { CompanySectionComponent } from './components/company-section/company-section.component';
+import { DepartmentsSectionComponent } from './components/departments-section/departments-section.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+import { register } from 'swiper/element/bundle';
+import { CreateDepDialogComponent } from './components/create-dep-dialog/create-dep-dialog.component';
+import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
+register();
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 registerLocaleData(en);
 
@@ -37,11 +53,27 @@ registerLocaleData(en);
     EmployeeComponent,
     DepartmentComponent,
     RegisterEmployeeDialogComponent,
+    TopNavComponent,
+    CompanySectionComponent,
+    DepartmentsSectionComponent,
+    FooterComponent,
+    CreateDepDialogComponent,
+    LanguageSwitcherComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+
+    // ngx-translate
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => new TranslateHttpLoader(http),
+        deps: [HttpClient],
+      },
+    }),
 
     // antd components
     NzTableModule,
@@ -51,6 +83,7 @@ registerLocaleData(en);
     NzInputModule,
     NzDatePickerModule,
     NzSelectModule,
+    NzIconModule,
 
     FormsModule,
     HttpClientModule,
@@ -59,5 +92,6 @@ registerLocaleData(en);
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}

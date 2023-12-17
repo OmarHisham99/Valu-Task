@@ -1,8 +1,7 @@
 export interface Employee {
-  id?: number;
+  id?: number | undefined;
   name: string;
   departmentId: number;
-  departmentName: string;
   employeeIdentification: string;
   employeePhone?: string;
   employeeMobile: string;
@@ -16,7 +15,7 @@ export interface Department {
   id?: number;
   name: string;
   details: string;
-  Order: number;
+  order: number;
   active: boolean;
   employees?: Employee[];
 }

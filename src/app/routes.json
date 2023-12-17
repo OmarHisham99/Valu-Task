@@ -1,0 +1,4 @@
+{
+  "/Employees/*": "/Employees/$1",
+  "/Departments/*": "/Departments/$1"
+}

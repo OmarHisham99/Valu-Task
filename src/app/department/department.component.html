@@ -1,1 +1,62 @@
-<p>department works!</p>
+<div class="container">
+  <div class="d-flex justify-content-center">
+    <h2 i18n>Departments List</h2>
+  </div>
+  <div class="d-flex" style="justify-content: flex-end">
+    <button
+      nz-button
+      style="
+        background-color: #fe5201;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      "
+      (click)="showCreateDepDialog()"
+      i18n
+    >
+      Create
+    </button>
+  </div>
+  <div>
+    <nz-table #departmentsTable [nzData]="this.departmentService.departments">
+      <thead>
+        <tr>
+          <th i18n>Name</th>
+          <th i18n>Details</th>
+          <th i18n>Order</th>
+          <th i18n>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let department of departmentsTable.data">
+          <td>{{ department.name }}</td>
+          <td>{{ department.details }}</td>
+          <td>{{ department.order }}</td>
+
+          <td style="display: flex; gap: 5px">
+            <button
+              nz-button
+              nzType="text"
+              (click)="handleEdit(department.id)"
+              nzSize="large"
+            >
+              <span nz-icon nzType="edit" nzTheme="outline"></span>
+            </button>
+            <button
+              nz-button
+              nzType="text"
+              nzSize="large"
+              (click)="handleDelete(department.id)"
+            >
+              <span nz-icon nzType="delete" nzTheme="outline"></span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</div>
+<!-- <app-footer></app-footer> -->
+<app-create-dep-dialog
+  [createDepartment]="createDepartment"
+></app-create-dep-dialog>

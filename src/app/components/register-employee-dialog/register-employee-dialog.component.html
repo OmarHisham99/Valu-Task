@@ -1,48 +1,58 @@
 <nz-modal
   [(nzVisible)]="isVisible"
-  nzTitle="The first Modal"
+  [nzTitle]="title"
   (nzOnCancel)="handleCancel()"
-  (nzOnOk)="handleOk()"
+  (nzOnOk)="submitForm()"
 >
   <ng-container *nzModalContent>
     <form
       nz-form
       [nzLayout]="'inline'"
       [formGroup]="validateForm"
-      (ngSubmit)="submitForm()"
+      class="row"
+      style="row-gap: 10px"
     >
       <nz-form-item>
-        <nz-form-control nzErrorTip="Please Enter Employee Name!">
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Employee Name!"
+        >
           <nz-input-group nzPrefixIcon="user">
             <input
-              class="item-width"
               formControlName="name"
               nz-input
               placeholder="Employee Name"
+              i18n-placeholder
             />
           </nz-input-group>
         </nz-form-control>
       </nz-form-item>
       <nz-form-item>
-        <nz-form-control nzErrorTip="Please Enter Employee Identification!">
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Employee Identification!"
+        >
           <nz-input-group nzPrefixIcon="number">
             <input
-              class="item-width"
               formControlName="employeeIdentification"
               nz-input
               placeholder="Enter Employee Identification"
+              i18n-placeholder
             />
           </nz-input-group>
         </nz-form-control>
       </nz-form-item>
       <nz-form-item>
-        <nz-form-control nzErrorTip="Please Enter Employee Mobile!">
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Employee Mobile!"
+        >
           <nz-input-group nzPrefixIcon="mobile">
             <input
-              class="item-width"
               formControlName="employeeMobile"
               nz-input
               placeholder="Enter Employee Mobile"
+              i18n-placeholder
             />
           </nz-input-group>
         </nz-form-control>
@@ -51,47 +61,63 @@
         <nz-form-control>
           <nz-input-group nzPrefixIcon="phone">
             <input
-              class="item-width"
+              type="number"
               formControlName="employeePhone"
               nz-input
               placeholder="Enter Employee Phone"
+              i18n-placeholder
             />
           </nz-input-group>
         </nz-form-control>
       </nz-form-item>
       <nz-form-item>
-        <nz-form-control nzErrorTip="Please Choose Hire Date!">
+        <nz-form-control i18n-nzErrorTip nzErrorTip="Please Choose Hire Date!">
           <nz-date-picker
-            class="item-width"
             formControlName="hireDate"
             placeholder="Choose Hire Date"
+            i18n-placeholder
+            style="width: 100%"
           />
         </nz-form-control>
       </nz-form-item>
       <nz-form-item>
         <nz-select
-          class="item-width"
-          formControlName="department"
+          formControlName="departId"
           nzPlaceHolder="Select Department"
+          i18n-nzPlaceHolder
+          style="width: 100%"
         >
           <nz-option
-            *ngFor="let department of departments"
+            *ngFor="let department of this.departmentService.departments"
             [nzLabel]="department.name"
             [nzValue]="department.id"
           />
         </nz-select>
       </nz-form-item>
       <nz-form-item>
-        <nz-form-control nzErrorTip="Please Enter Employee Position!">
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Employee Position!"
+        >
           <nz-input-group nzPrefixIcon="team">
             <input
               formControlName="position"
-              class="item-width"
               nz-input
               placeholder="Position"
+              i18n-placeholder
             />
           </nz-input-group>
         </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-select
+          formControlName="active"
+          nzPlaceHolder=""
+          style="width: 100%"
+        >
+          <nz-option nzLabel="Active" [nzValue]="true" />
+          <nz-option nzLabel="Inactive" [nzValue]="false" />
+        </nz-select>
       </nz-form-item>
     </form>
   </ng-container>

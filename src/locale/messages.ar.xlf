@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <target> اغلاق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/alert/alert.ts</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.slide-number" datatype="html">
+        <source> Slide <x id="INTERPOLATION" equiv-text="this._interval"/> of <x id="INTERPOLATION_1" equiv-text="t interval() {"/> </source>
+        <target> الشريحة <x id="INTERPOLATION" equiv-text="this._interval"/> من <x id="INTERPOLATION_1" equiv-text="t interval() {"/> </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">168,176</context>
+        </context-group>
+        <note priority="1" from="description">Currently selected slide number read by screen reader</note>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <target> السابق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">192,194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <target> التالي </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <target> اختر الشهر </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <target> اختر السنة </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <target> الشهر السابق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <target> الشهر القادم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <target> «« </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <target> « </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">300</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <target> » </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <target> »» </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">324,325</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <target> الاول </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">337,339</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <target> السابق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">352,354</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <target> التالي </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">369,370</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <target> الاخير </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">386,389</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="ress bar name."/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
+          <context context-type="linenumber">66,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <target> ساعات </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <target> الساعات </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">250,251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <target> دقائق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">267</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <target> الدقائق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">284,286</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <target> زيادة الساعات </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">297,298</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <target> تقليل الساعات </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <target> زيادة الدقائق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">326,330</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <target> تقليل الدقائق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">348,349</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <target> ثواني </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">360,361</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <target> الثواني </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">378,379</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <target> زيادة الثواني </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">396,398</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <target> تقليل الثواني </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">421,422</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">441</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <target> اغلاق </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/toast/toast.ts</context>
+          <context context-type="linenumber">139,142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4839787891817796505" datatype="html">
+        <source> Unlocking Innovation: Transforming Ideas into Reality </source>
+        <target> فتح الابتكار: تحويل الأفكار إلى واقع </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/company-section/company-section.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8102115507437562480" datatype="html">
+        <source> Embark on a journey of creativity and discovery as we pave the way for innovation in the digital landscape. Our mission is to foster a culture of imagination and originality, turning visionary concepts into groundbreaking solutions that redefine industries. Join us in shaping the future through innovation that transcends boundaries and sparks lasting change. </source>
+        <target> انطلق في رحلة من الإبداع والاكتشاف بينما نمهد الطريق للابتكار في المشهد الرقمي. مهمتنا هي تعزيز ثقافة الخيال والأصالة، وتحويل المفاهيم الحكيمة إلى حلول رائدة تعيد تعريف الصناعات. انضم إلينا في تشكيل المستقبل من خلال الابتكار الذي يتجاوز الحدود ويثير التغيير الدائم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/company-section/company-section.component.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42744850103327582" datatype="html">
+        <source>Register New Employee</source>
+        <target> تسجيل موظف جديد </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1893609110525765239" datatype="html">
+        <source>Please Enter Department Name!</source>
+        <target> الرجاء ادخال اسم القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="324616296861808816" datatype="html">
+        <source>Department Name</source>
+        <target> اسم القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6150760909234035819" datatype="html">
+        <source>Please Enter Department Details!</source>
+        <target> الرجاء ادخال تفاصيل القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3688956632832916795" datatype="html">
+        <source>Enter Department Details</source>
+        <target> ادخل تفاصيل القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1776921601759761681" datatype="html">
+        <source>Please Enter Department Order!</source>
+        <target> الرجاء ادخال ترتيب القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5072800243817093708" datatype="html">
+        <source>Enter Department Order</source>
+        <target> ادخل ترتيب القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/create-dep-dialog/create-dep-dialog.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3651165538579172203" datatype="html">
+        <source>Site Map</source>
+        <target> خريطة الموقع </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <target> الرئيسية </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/top-nav/top-nav.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3537701360947660901" datatype="html">
+        <source>Employees</source>
+        <target> الموظفين </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/top-nav/top-nav.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6945686797037328785" datatype="html">
+        <source>Departments</source>
+        <target> الاقسام </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/top-nav/top-nav.component.html</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="759687838251957893" datatype="html">
+        <source>Contact Us</source>
+        <target> تواصل معنا </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="344878311937590938" datatype="html">
+        <source>Connect With Us</source>
+        <target> تواصل معنا </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7632677325288481813" datatype="html">
+        <source>Please Enter Employee Name!</source>
+        <target> الرجاء ادخال اسم الموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="84666436235862265" datatype="html">
+        <source>Employee Name</source>
+        <target> اسم الموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1956374462810466637" datatype="html">
+        <source>Please Enter Employee Identification!</source>
+        <target> الرجاء ادخال رقم الهوية للموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8878152780092699140" datatype="html">
+        <source>Enter Employee Identification</source>
+        <target> ادخل رقم الهوية للموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4192920370923065754" datatype="html">
+        <source>Please Enter Employee Mobile!</source>
+        <target> الرجاء ادخال رقم الهاتف للموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5387553865843612557" datatype="html">
+        <source>Enter Employee Mobile</source>
+        <target> ادخل رقم الهاتف للموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8122968767592024980" datatype="html">
+        <source>Enter Employee Phone</source>
+        <target> ادخل رقم الهاتف للموظف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6429002420274337412" datatype="html">
+        <source>Please Choose Hire Date!</source>
+        <target> الرجاء اختيار تاريخ التوظيف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8407935912054566325" datatype="html">
+        <source>Choose Hire Date</source>
+        <target> اختر تاريخ التوظيف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3351569259740254627" datatype="html">
+        <source>Select Department</source>
+        <target> اختر القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="245702478090695067" datatype="html">
+        <source>Please Enter Employee Position!</source>
+        <target> الرجاء ادخال المنصب </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">102,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1172866303261737245" datatype="html">
+        <source>Position</source>
+        <target> المنصب </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register-employee-dialog/register-employee-dialog.component.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3823012973250350549" datatype="html">
+        <source>Departments List</source>
+        <target> قائمة الاقسام </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/department/department.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7941428823403788384" datatype="html">
+        <source> Create </source>
+        <target> انشاء </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/department/department.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <target> الاسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/department/department.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5028777105388019087" datatype="html">
+        <source>Details</source>
+        <target> التفاصيل </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/department/department.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="220550782947016929" datatype="html">
+        <source>Order</source>
+        <target> ترتيب </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/department/department.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3193976279273491157" datatype="html">
+        <source>Actions</source>
+        <target> الاجراءات </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/department/department.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2677806214180049349" datatype="html">
+        <source>Employees List</source>
+        <target> قائمة الموظفين </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3955967824702499842" datatype="html">
+        <source>Department</source>
+        <target> القسم </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2404454169680431207" datatype="html">
+        <source>Hire Date</source>
+        <target> تاريخ التوظيف </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9216117865911519658" datatype="html">
+        <source>Action</source>
+        <target> الاجراءات </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/employee/employee.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

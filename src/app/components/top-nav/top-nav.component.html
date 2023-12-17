@@ -1,0 +1,41 @@
+<nav>
+  <div class="logo">
+    <a routerLink="/">
+      <img src="assets/images/valu_logo.png" alt="Logo" />
+    </a>
+  </div>
+  <div class="burger-icon" (click)="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div
+    class="tabs"
+    [ngClass]="{ 'show-links': isMobileMenuOpen }"
+    [@fadeInOut]="isMobileMenuOpen ? 'visible' : 'hidden'"
+  >
+    <a
+      routerLink="/"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      (click)="toggleMobileMenu()"
+      i18n
+      >{{ "Home" | translate }}</a
+    >
+    <a
+      routerLink="/employees"
+      [routerLinkActive]="['active']"
+      (click)="toggleMobileMenu()"
+      i18n
+      >{{ "Employees" | translate }}</a
+    >
+    <a
+      routerLink="/departments"
+      [routerLinkActive]="['active']"
+      (click)="toggleMobileMenu()"
+      i18n
+      >{{ "Departments" | translate }}</a
+    >
+    <app-language-switcher></app-language-switcher>
+  </div>
+</nav>

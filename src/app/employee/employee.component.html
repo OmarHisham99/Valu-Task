@@ -1,33 +1,66 @@
 <div class="container">
   <div class="d-flex justify-content-center">
-    <h1>Employee List</h1>
+    <h2 i18n>{{"Employees List"|translate}}</h2>
   </div>
   <div class="d-flex" style="justify-content: flex-end">
-    <button nz-button nzType="primary" (click)="showRegisterEmployeeDialog()">Create</button>
+    <button
+      nz-button
+      style="
+        background-color: #fe5201;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      "
+      (click)="showRegisterEmployeeDialog()"
+      i18n
+    >
+      {{"Create"|translate}}
+    </button>
   </div>
   <div>
-    <nz-table #employeeTable [nzData]="employees">
-      <thead> 
+    <nz-table
+      [nzPageSize]="10"
+      #employeeTable
+      [nzData]="this.employeeService.employees"
+    >
+      <thead>
         <tr>
-          <th>Name</th>
-          <th>Position</th>
-          <th>Department</th>
-          <th>Hire Date</th>
-          <th>Action</th>
+          <th i18n>{{"Name" | translate}}</th>
+          <th i18n>{{"Position"|translate}}</th>
+          <th i18n>{{"Department"|translate}}</th>
+          <th i18n>{{"Hire Date" |translate}}</th>
+          <th i18n>{{"Actions"|translate}}</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let employee of employeeTable.data">
           <td>{{ employee.name }}</td>
           <td>{{ employee.position }}</td>
-          <td>{{ employee.departmentName }}</td>
+          <td>{{ employee.departmentId }}</td>
           <td>{{ employee.hireDate }}</td>
-          <td>
-            <a>Delete</a>
+          <td style="display: flex; gap: 5px">
+            <button
+              nz-button
+              nzType="text"
+              (click)="handleEdit(employee.id)"
+              nzSize="large"
+            >
+              <span nz-icon nzType="edit" nzTheme="outline"></span>
+            </button>
+            <button
+              nz-button
+              nzType="text"
+              nzSize="large"
+              (click)="handleDelete(employee.id)"
+            >
+              <span nz-icon nzType="delete" nzTheme="outline"></span>
+            </button>
           </td>
         </tr>
       </tbody>
     </nz-table>
   </div>
 </div>
-<app-register-employee-dialog></app-register-employee-dialog>
+<app-register-employee-dialog
+  [createEmployee]="createEmployee"
+></app-register-employee-dialog>

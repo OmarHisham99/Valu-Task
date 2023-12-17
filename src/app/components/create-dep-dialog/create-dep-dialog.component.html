@@ -1,0 +1,71 @@
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzTitle="Register New Employee"
+  i18n-nzTitle
+  (nzOnCancel)="handleCancel()"
+  (nzOnOk)="submitForm()"
+>
+  <ng-container *nzModalContent>
+    <form
+      nz-form
+      [nzLayout]="'inline'"
+      [formGroup]="validateForm"
+      class="row"
+      style="row-gap: 10px"
+    >
+      <nz-form-item>
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Department Name!"
+        >
+          <nz-input-group nzPrefixIcon="form">
+            <input
+              formControlName="name"
+              nz-input
+              placeholder="Department Name"
+              i18n-placeholder
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Department Details!"
+        >
+          <nz-input-group nzPrefixIcon="align-left">
+            <input
+              formControlName="details"
+              nz-input
+              placeholder="Enter Department Details"
+              i18n-placeholder
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-control
+          i18n-nzErrorTip
+          nzErrorTip="Please Enter Department Order!"
+        >
+          <nz-input-group nzPrefixIcon="sort-ascending">
+            <input
+              type="number"
+              formControlName="order"
+              nz-input
+              placeholder="Enter Department Order"
+              i18n-placeholder
+            />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-select formControlName="active" style="width: 100%">
+          <nz-option nzLabel="Active" [nzValue]="true" />
+          <nz-option nzLabel="Inactive" [nzValue]="false" />
+        </nz-select>
+      </nz-form-item>
+    </form>
+  </ng-container>
+</nz-modal>
